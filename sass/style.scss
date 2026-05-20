@@ -199,6 +199,28 @@ body {
 	}
 }
 
+// HERO IMG
+
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImages('../image/dondoko-island-like-a-dragon-infinite-wealth-guide.jpg');
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+
+	&__title {
+		margin-bottom: 0.5em;
+		font-family: 'Dancing Script', cursive;
+		font-size: 4.8rem;
+		font-weight: 300;
+	}
+
+	&__text {
+		padding: 1em 0;
+	}
+}
+
 // ============================================
 // MEDIA
 // ============================================
@@ -258,6 +280,19 @@ body {
 			font-size: 1.8rem;
 		}
 	}
+
+	.hero-img {
+		padding: 30rem 2em;
+
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+
+		&__text {
+			font-style: 1.6em;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -297,6 +332,18 @@ body {
 		&__text {
 			font-size: 1.4rem;
 		}
+	}
 
+	.hero-img {
+		padding: 40rem 2em;
+	}
+
+	&__title {
+		font-size: 7.2rem;
+	}
+
+	hr {
+		width: 60%;
+		max-width: 900px;
 	}
 }
